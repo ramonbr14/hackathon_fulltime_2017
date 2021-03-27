@@ -8,56 +8,34 @@ public class Main
 		
 		try{
 			
-				Float f1 = Float.parseFloat(x1);
-				Float f2 = Float.parseFloat(x2);
-				Float f3 = Float.parseFloat(y1);
-				Float f4 = Float.parseFloat(y2);
-				System.out.printf("TUDO CERTO ATE AQUI");
+				Double fxa = Double.parseDouble(x1);
+				Double fxb = Double.parseDouble(x2);
+				Double fya = Double.parseDouble(y1);
+				Double fyb = Double.parseDouble(y2);
+				
+				Double dist = Math.pow(fxb-fxa,2);
+				//Float dist = Float.parseFloat(Math.sqrt(Math.pow(fxb-fxa,2)+Math.pow(fyb-fya,2)));
+				
+				System.out.printf("RESULTADO DA DISTACIA: " + dist);
 		}catch(Exception e) {
-        System.out.printf("ERRO NA CONVERSÃO STRING PRA FLOAT");
+        System.out.printf("No calculo da distancia");
 		}
 		
 	}
 	
-	/*try {	List<Integer> numeros = new ArrayList<Integer>();
-	    String v2="";
-	    int i;
-	    int m = entrada.length();
-	
-	    for(i=0;i<entrada.length();i++){
-	        if(entrada.charAt(i) == ' '|| i == m){
-	            numeros.add(Integer.parseInt(v2));
-	            v2 = "";
-	        }else{
-	            if((entrada.charAt(i) >= '0') && (entrada.charAt(i) <= '9')){
-	                v2 = v2+String.valueOf(entrada.charAt(i));
-	                }    
-	            }
-	    }
-	
-	numeros.add(Integer.parseInt(v2));// ultimo numero da sequencia da entrada é adicionado aqui
-	m = numeros.size();// tamanho da lista é gerado aqui7 
-	
-	maiornumero(numeros,m);// chamada da função do maior numero
-    
-    
-    }catch (Exception e) {
-        System.out.printf("ERRO NA EXECUÇÃO, ENTRADA FORA DO LIMITE");
-    }*/
-    
 	public static void main(String[] args) {
 		
 		Scanner s = new Scanner(System.in);
 		System.out.println("DISTANCIA ENTRE PONTOS \n");
-		System.out.println("Forneca a coordenada do ponto x1:  \n");
-		String x1 = s.nextLine();
-		System.out.println("Forneca a coordenada do ponto x2:  \n");
-		String x2 = s.nextLine();
-		System.out.println("Forneca a coordenada do ponto y1:  \n");
-		String y1 = s.nextLine();
-		System.out.println("Forneca a coordenada do ponto y2:  \n");
-		String y2 = s.nextLine();
-		distancia(x1,x2,y1,y2);
+		System.out.println("Forneca a coordenada do ponto xa:  \n");
+		String xa = s.nextLine();
+		System.out.println("Forneca a coordenada do ponto xb:  \n");
+		String xb = s.nextLine();
+		System.out.println("Forneca a coordenada do ponto ya:  \n");
+		String ya = s.nextLine();
+		System.out.println("Forneca a coordenada do ponto yb:  \n");
+		String yb = s.nextLine();
+		distancia(xa,xb,ya,yb);
 		System.out.println("\n\n PROGRAMA ENCERRADO \n");
 		
 	}
