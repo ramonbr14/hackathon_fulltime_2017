@@ -6,7 +6,8 @@ public class Main
     
     public static void separaNumero(String entrada){
 	//Codigo para Extrair os numeros da entrada
-	try {	List<Integer> numeros = new ArrayList<Integer>();
+	try {	
+		List<Integer> numeros = new ArrayList<Integer>();
 	    String v2="";
 	    int i;
 	    int m = entrada.length();
