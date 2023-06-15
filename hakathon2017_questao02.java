@@ -18,7 +18,7 @@ public class Main
 	            System.out.println("Valor de v2: " + v2);
 	            v2 = "";
 	        }else{
-	            if((entrada.charAt(i) >= '0') && (entrada.charAt(i) <= '9'||(entrada.charAt(i) == "."))){
+	            if((entrada.charAt(i) >= '0') && (entrada.charAt(i) <= '9'||(entrada.charAt(i) == '.'))){
 	                v2 = v2+String.valueOf(entrada.charAt(i));
 	                System.out.println("Valor de v2: " + v2);
 	                }    
